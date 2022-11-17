@@ -1,6 +1,6 @@
 
 #include <iostream>
-#include "Zmienna.h"
+#include "Zmienna.cpp"
 
 int main()
 {
