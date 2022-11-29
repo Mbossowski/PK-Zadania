@@ -1,0 +1,18 @@
+
+
+#include <iostream>
+
+int main()
+{
+    //1. a)
+    auto zad1 = [](int x) {std::cout << " a)" << x << "\n b)" << x * 2 + 1 << "\n c)" << x * x - 1 << "\n"; };
+
+    for(int i =1;i<=4;i++)
+    {
+        zad1(i);
+    }
+    
+
+
+}
+
