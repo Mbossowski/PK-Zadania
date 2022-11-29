@@ -1,5 +1,3 @@
-
-
 #include <iostream>
 
 int main()
@@ -7,17 +5,11 @@ int main()
     //2.
 
     auto sum = [](int a, int b) -> int {
-        
-
         return a+b;
-
     };
 
-    auto avg = [](int a, int b) -> double {
-
-
+    auto avg = [](double a, double b) -> double {
         return double((a+b)/2);
-
     };
 
 
@@ -27,7 +19,7 @@ int main()
     int i;
     std::cout << "Podaj działanie ( 1 - suma | 2 - srednia): ";
     std::cin >> i;
-    
+
     if(i==1)
     {
         std::cout << "Wynik: " << sum(a, b);
@@ -36,8 +28,6 @@ int main()
     {
         std::cout << "Wynik: " << avg(a, b);
     }
-   
-
 
 }
 
