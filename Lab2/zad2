@@ -1,0 +1,38 @@
+
+
+#include <iostream>
+
+int main()
+{
+    //2.
+    
+    auto zad2 = [](int a, int b) {
+        int i;
+        std::cout << "Podaj działanie ( 1 - suma | 2 - srednia): ";
+        std::cin >> i;
+        int sum = a + b;
+        double avg = (a + b)/2;
+
+
+        if (i = 1)
+        {
+            int Out = sum;
+        }
+        else
+        {
+            double Out = avg;
+        }
+
+        return Out;
+
+    };
+
+    int a, b;
+    std::cout << "Podaj 2 liczby: ";
+    std::cin >> a >> b;
+
+    std::cout << "Wynik: " << zad2(a,b);
+
+
+}
+
