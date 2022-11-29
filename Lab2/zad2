@@ -5,33 +5,38 @@
 int main()
 {
     //2.
-    
-    auto zad2 = [](int a, int b) {
-        int i;
-        std::cout << "Podaj działanie ( 1 - suma | 2 - srednia): ";
-        std::cin >> i;
-        int sum = a + b;
-        double avg = (a + b)/2;
 
+    auto sum = [](int a, int b) -> int {
+        
 
-        if (i = 1)
-        {
-            int Out = sum;
-        }
-        else
-        {
-            double Out = avg;
-        }
-
-        return Out;
+        return a+b;
 
     };
+
+    auto avg = [](int a, int b) -> double {
+
+
+        return double((a+b)/2);
+
+    };
+
 
     int a, b;
     std::cout << "Podaj 2 liczby: ";
     std::cin >> a >> b;
-
-    std::cout << "Wynik: " << zad2(a,b);
+    int i;
+    std::cout << "Podaj działanie ( 1 - suma | 2 - srednia): ";
+    std::cin >> i;
+    
+    if(i==1)
+    {
+        std::cout << "Wynik: " << sum(a, b);
+    }
+    else if(i==2)
+    {
+        std::cout << "Wynik: " << avg(a, b);
+    }
+   
 
 
 }
